@@ -1,0 +1,123 @@
+﻿Builtins
+========
+
+A list of builtin procedures still written in C#.
+
+(rnrs base):
+
+apply [1][5][7]
+call-with-current-continuation/call/cc [1][5]
+call-with-values [1][5][7]
+car [7]
+cdr [7]
+cons [7]
+eq? [7]
+eqv? [7]
+list [7]
+not [7]
+null? [7]
+pair? [7]
+string->number [7]
+values [5][6][7]
+vector [7]
+
+(rnrs r5rs):
+
+
+(rnrs control):
+
+
+(rnrs eval):
+
+
+(rnrs mutable-pairs):
+
+
+(rnrs mutable-strings):
+
+
+(rnrs programs):
+
+
+(rnrs syntax-case):
+
+
+(rnrs files):
+
+
+(rnrs sorting):
+
+
+(rnrs lists):
+
+
+(rnrs io simple):
+
+eof-object
+eof-object?
+
+(rnrs bytevectors):
+
+
+(rnrs unicode):
+
+
+(rnrs exceptions):
+
+
+(rnrs arithmetic bitwise):
+
+
+(rnrs arithmetic fixnums):
+
+
+(rnrs arithmetic flonums):
+
+
+(rnrs hashtables):
+
+hashtable-entries [6]
+
+(rnrs io ports):
+
+bytevector->string
+eof-object
+eof-object?
+open-file-input-port
+open-file-input/output-port
+string->bytevector
+
+(rnrs enums):
+
+
+(rnrs conditions):
+
+condition
+condition-accessor [3]
+condition-predicate [3]
+condition?
+simple-conditions
+
+(rnrs records inspection):
+
+record-rtd
+record?
+
+(rnrs records procedural):
+
+make-record-constructor-descriptor
+make-record-type-descriptor
+record-constructor [3]
+
+(rnrs records syntactic):
+
+
+Notes:
+
+[1] accepts a procedure as an argument, meant to be called
+[2] calls a scheme procedure internally
+[3] returns a scheme procedure
+[4] implemented in Scheme in CPS mode
+[5] special CPS primitive
+[6] returns multiple values
+[7] optimized builtin
